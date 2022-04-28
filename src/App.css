@@ -57,7 +57,7 @@ width: 100%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-image: url('IMG-20160906-WA0003.jpg');
+  background-image: url('images/IMG-20160906-WA0003.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -66,7 +66,7 @@ width: 100%;
 .name-username{
   float: left;
   font-size: 0.8em;
-  padding: 2%;
+  padding-left: 2%;
 }
 .time-device{
 padding-top: 2%;
@@ -80,7 +80,7 @@ border-color: #e6ffff;
 .tweet-analytics{
   padding-bottom: 3%;
   padding-top: 2%;
-  font-size:0.7em;
+  font-size:0.6em;
   text-align:left;
   padding-bottom: 1%;
   border-style: hidden hidden solid;
@@ -88,6 +88,7 @@ border-color: #e6ffff;
 }
 
 .reply-retweet-like-share {
+  padding-top: 2%;
   white-space: nowrap;
   overflow: scroll;
 }
@@ -99,34 +100,16 @@ border-color: #e6ffff;
   display: inline-block;
 }
 
-.Reply{
-  float:center;
-  background-image: url("logoreply.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain;
-  height: 30px;
+.reply{
   width: 25%;
 }
-.Share{
-  float:center;
-  background-image: url("logoshare.svg");
-  background-repeat: no-repeat, no-repeat;
-  height: 30px;
+.share{
   width: 25%;
 }
-.Retweet{
-  float:center;
-  background-image: url("logoretweet.svg");
-  background-repeat: no-repeat, no-repeat;
-  height: 30px;
+.retweet{
   width: 25%;
-}
-.Like{
-  float:center;
-  background-image: url("logolike.svg");
-  background-repeat: no-repeat, no-repeat;
-  height: 30px;
-  width: auto;
+} 
+.like{
   width: 25%;
 }
 @keyframes App-logo-spin {

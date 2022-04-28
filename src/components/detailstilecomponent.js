@@ -1,4 +1,10 @@
 import react from "react";
+import { icons } from "react-icons";
+import { BsFillBrushFill,
+     BsFillSuitHeartFill } from "react-icons/bs";
+import {SiSimpleanalytics} from "react-icons/si"
+
+import {FaRetweet, FaReply} from "react-icons/fa"
 class Welcome extends react.Component {
     render() {
       return (
@@ -17,12 +23,24 @@ class Welcome extends react.Component {
                         Twitter for {this.props.device}
                     </a> </div>
         <div className="tweet-analytics"> <a className="nostyle" href="https://twitter.com/starlord_4/status/1514466589789274116/analytics" target="_blank">
-                       view tweet {this.props.analytics} </a> </div>
+                       <SiSimpleanalytics/> &nbsp; view tweet {this.props.analytics} </a> </div>
         <div className="reply-retweet-like-share">
-            <div className="Reply"></div>
-            <div className="Retweet"></div>
-            <div className="Like"></div>
-            <div className="Share"></div>
+
+            <div className="reply">
+            <FaReply  className="reply"/>
+            </div>
+
+            <div className="retweet">
+            <FaRetweet  className="retweet"/>
+            </div>
+
+            <div className="like">
+            <BsFillSuitHeartFill  className="like"/>
+            </div>
+
+            <div className="share">
+            <BsFillBrushFill  className="share"/>
+            </div>
         </div>
     </div>
       )
