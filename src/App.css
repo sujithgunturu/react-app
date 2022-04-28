@@ -1,5 +1,18 @@
 .App {
-  text-align: center;
+  text-align: left;
+}
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+.tweet{
+  padding: 5%;
+  width: 50%;
+  padding-bottom: 0%;
+}
+
+a.nostyle:visited {
+  color: inherit;
 }
 
 .App-logo {
@@ -27,32 +40,95 @@
 .App-link {
   color: #61dafb;
 }
-.tweet{
 
+.tweet-content{
+  padding-top: 2%;
+  padding-bottom: 2.5%;
+  text-align: left;
+  border-style: hidden hidden solid;
+  border-color: #e6ffff;
 }
 .name-username-icon{
-
+padding: 2.5%;
+float: left;
+width: 100%;
+}
+.profile-picture{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url('IMG-20160906-WA0003.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  float: left;
+}
+.name-username{
+  float: left;
+  font-size: 0.8em;
+  padding: 2%;
 }
 .time-device{
-
+padding-top: 2%;
+font-size: 0.5em;
+text-align: left;
+padding-bottom: 2%;
+border-style: hidden hidden solid;
+border-color: #e6ffff;
 }
 
 .tweet-analytics{
-
+  padding-bottom: 3%;
+  padding-top: 2%;
+  font-size:0.7em;
+  text-align:left;
+  padding-bottom: 1%;
+  border-style: hidden hidden solid;
+  border-color: #e6ffff;
 }
-.reply-retweet-like-share{
 
+.reply-retweet-like-share {
+  white-space: nowrap;
+  overflow: scroll;
 }
+
+.name-username-icon> div {
+  display: inline-block;
+}
+.reply-retweet-like-share > div {
+  display: inline-block;
+}
+
 .Reply{
-
+  float:center;
+  background-image: url("logoreply.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 25%;
 }
 .Share{
-
+  float:center;
+  background-image: url("logoshare.svg");
+  background-repeat: no-repeat, no-repeat;
+  height: 30px;
+  width: 25%;
 }
 .Retweet{
-  
+  float:center;
+  background-image: url("logoretweet.svg");
+  background-repeat: no-repeat, no-repeat;
+  height: 30px;
+  width: 25%;
 }
-
+.Like{
+  float:center;
+  background-image: url("logolike.svg");
+  background-repeat: no-repeat, no-repeat;
+  height: 30px;
+  width: auto;
+  width: 25%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
